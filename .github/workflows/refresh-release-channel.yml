@@ -30,6 +30,9 @@ concurrency:
 
 jobs:
   refresh:
+    defaults:
+      run:
+        shell: bash
     runs-on: [self-hosted, Windows]
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
